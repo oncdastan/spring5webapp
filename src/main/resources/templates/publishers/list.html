@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Example Web App</title>
+</head>
+<body>
+<h1>Publisher List</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Address Line</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+    </tr>
+    <tr th:each="publisher : ${publishers}">
+        <td th:text="${publisher.id}"></td>
+        <td th:text="${publisher.Name}"></td>
+        <td th:text="${publisher.addressLine1}"></td>
+        <td th:text="${publisher.City}"></td>
+        <td th:text="${publisher.State}"></td>
+        <td th:text="${publisher.Zip}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
