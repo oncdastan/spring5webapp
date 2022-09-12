@@ -17,6 +17,6 @@ public class PublisherController {
 
         model.addAttribute("publishers", publisherRepository.findAll());
 
-        return "publishers";
+        return "publishers/list";
     }
 }
